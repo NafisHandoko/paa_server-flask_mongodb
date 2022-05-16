@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      table,th,
+      td {
+      border: 1px solid black;
+    }
+  </style>
+  </head>
+<body>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Location</th>
+    </tr>
+    {% for item in barang %}
+    <tr>
+      <td>{{ item['nama']}}</td>
+      <td>{{ item['harga'] }}</td>
+      <td>{{ item['stock'] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
